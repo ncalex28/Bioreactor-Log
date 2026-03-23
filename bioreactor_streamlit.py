@@ -136,7 +136,8 @@ if uploaded_files:
                 facet_row="variable",
                 height=300 * len(selected_vars),
                 labels={"experiment_day": "Experiment Day", "value": "Value", "report_id": "Report"},
-                title="Bioreactor Process Data Over Time"
+                title="Bioreactor Process Data Over Time",
+                color_discrete_sequence=px.colors.qualitative.Plotly
             )
 
             # Update y-axes to be independent
